@@ -1,0 +1,1058 @@
+{
+	"info": {
+		"_postman_id": "998e0706-1e4a-4b14-9c30-97f5b62cbb37",
+		"name": "tenant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21785796"
+	},
+	"item": [
+		{
+			"name": "user&admin",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"moni@abc.com\",\n    \"password\":\"test1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"moni@abc.com\",\n    \"password\":\"test1234\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "479"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1df-MajcPtw4S2Md3YJI0ajvZam1F4k\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jan 2026 03:34:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAYWJjLmNvbSIsInN1YiI6IjNiYWIyYWY0LTRlOWUtNDMxNi1iMWI3LTViNDgxMjg3ODZjNyIsInRlbmFudElkIjoiZWYwM2JjN2UtMjg3NC00OWY5LWJlNWUtYTJjYWQ2MjhkNDFmIiwiaXNTdXBlckFkbWluIjpmYWxzZSwiaWF0IjoxNzY3NDk3NjYyLCJleHAiOjE3Njc1ODQwNjJ9.SeVwveVXwBtn3Sh2bJm6pPnXn1kUKVF9A1tOpEeOzQI\",\n    \"user\": {\n        \"id\": \"3bab2af4-4e9e-4316-b1b7-5b48128786c7\",\n        \"email\": \"moni@abc.com\",\n        \"tenantId\": \"ef03bc7e-2874-49f9-be5e-a2cad628d41f\",\n        \"isSuperAdmin\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"moni@abc.com\",\n    \"password\":\"test1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"moni@abc.com\",\n    \"password\":\"test1234\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e5-1+BmR/N8nc5mOyvwNSoCDwGfpHY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jan 2026 03:33:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\",\n    \"user\": {\n        \"id\": \"3bab2af4-4e9e-4316-b1b7-5b48128786c7\",\n        \"tenantId\": null,\n        \"email\": \"moni@abc.com\",\n        \"isSuperAdmin\": 0,\n        \"createdAt\": \"2026-01-04T03:33:42.028Z\",\n        \"updatedAt\": \"2026-01-04T03:33:42.028Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "tenant api",
+			"item": [
+				{
+					"name": "create-tenant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAYWJjLmNvbSIsInN1YiI6IjNiYWIyYWY0LTRlOWUtNDMxNi1iMWI3LTViNDgxMjg3ODZjNyIsInRlbmFudElkIjpudWxsLCJpc1N1cGVyQWRtaW4iOmZhbHNlLCJpYXQiOjE3Njc0OTc2MjksImV4cCI6MTc2NzU4NDAyOX0.lojSZDcdQ90rXk_Kq_lrOfEXUbjuN6g-fdD4L3R7CJ4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Test xyz abc\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tenants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create-tenant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\": \"Test xyz abc\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/tenants",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tenants"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "145"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"91-gNN2zYSGBfGue878N1h2Ba5jgVA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jan 2026 03:34:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"ef03bc7e-2874-49f9-be5e-a2cad628d41f\",\n    \"name\": \"Test xyz abc\",\n    \"createdAt\": \"2026-01-04T03:34:09.502Z\",\n    \"updatedAt\": \"2026-01-04T03:34:09.502Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "list-tenants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list-tenants",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/tenants",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tenants"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "720"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d0-dEc1/DKNr4f43QXzknf2C0gcAiY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jan 2026 04:22:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"af72d453-c581-4c31-b7f6-d090cd34930c\",\n        \"name\": \"Test Moni\",\n        \"createdAt\": \"2026-01-04T02:32:25.839Z\",\n        \"updatedAt\": \"2026-01-04T02:32:25.839Z\"\n    },\n    {\n        \"id\": \"1c2c722f-130a-4ccc-a839-00686cd00385\",\n        \"name\": \"Test Moni 2\",\n        \"createdAt\": \"2026-01-04T03:13:52.434Z\",\n        \"updatedAt\": \"2026-01-04T03:13:52.434Z\"\n    },\n    {\n        \"id\": \"a9ec31a8-f8d2-4349-9d7b-3f0e85788de0\",\n        \"name\": \"Test test\",\n        \"createdAt\": \"2026-01-04T03:18:05.809Z\",\n        \"updatedAt\": \"2026-01-04T03:18:05.809Z\"\n    },\n    {\n        \"id\": \"1df9d3f5-e21b-4007-95f5-04d930cc5323\",\n        \"name\": \"Test xyz\",\n        \"createdAt\": \"2026-01-04T03:20:10.599Z\",\n        \"updatedAt\": \"2026-01-04T03:20:10.599Z\"\n    },\n    {\n        \"id\": \"ef03bc7e-2874-49f9-be5e-a2cad628d41f\",\n        \"name\": \"Test xyz abc\",\n        \"createdAt\": \"2026-01-04T03:34:09.502Z\",\n        \"updatedAt\": \"2026-01-04T03:34:09.502Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "invoice api",
+			"item": [
+				{
+					"name": "get-invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants/1df9d3f5-e21b-4007-95f5-04d930cc5323/invoices?status=open&amountMin=1000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"1df9d3f5-e21b-4007-95f5-04d930cc5323",
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "open"
+								},
+								{
+									"key": "amountMin",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-invoices",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/tenants/1df9d3f5-e21b-4007-95f5-04d930cc5323/invoices?status=open&amountMin=1000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tenants",
+										"1df9d3f5-e21b-4007-95f5-04d930cc5323",
+										"invoices"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "open"
+										},
+										{
+											"key": "amountMin",
+											"value": "1000"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "344"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"158-HR3ska/YpjXIy8H2voKDH5o2DLA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jan 2026 03:24:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"2e268f87-ac6b-4863-8f07-884ba7f8b4a9\",\n        \"tenantId\": \"1df9d3f5-e21b-4007-95f5-04d930cc5323\",\n        \"vendorId\": null,\n        \"invoiceNumber\": \"INV-001\",\n        \"amount\": \"1500.50\",\n        \"currency\": \"USD\",\n        \"invoiceDate\": \"2024-01-15T00:00:00.000Z\",\n        \"description\": \"Test invoice moni\",\n        \"status\": \"open\",\n        \"createdAt\": \"2026-01-04T03:23:51.925Z\",\n        \"updatedAt\": \"2026-01-04T03:23:51.925Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get-specific-invoice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants/53c19896-4603-4dec-aaee-a270c9129bea/invoices/dce510e7-db9b-4a4e-8567-6fd306a7bbda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"53c19896-4603-4dec-aaee-a270c9129bea",
+								"invoices",
+								"dce510e7-db9b-4a4e-8567-6fd306a7bbda"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-specific-invoice",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/tenants/53c19896-4603-4dec-aaee-a270c9129bea/invoices/dce510e7-db9b-4a4e-8567-6fd306a7bbda",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tenants",
+										"53c19896-4603-4dec-aaee-a270c9129bea",
+										"invoices",
+										"dce510e7-db9b-4a4e-8567-6fd306a7bbda"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "337"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"151-T9gt6QwHd9l4TMpD4DKEW5NpO+s\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jan 2026 01:55:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"dce510e7-db9b-4a4e-8567-6fd306a7bbda\",\n    \"tenantId\": \"53c19896-4603-4dec-aaee-a270c9129bea\",\n    \"vendorId\": null,\n    \"invoiceNumber\": \"INV-001\",\n    \"amount\": \"1500.50\",\n    \"currency\": \"USD\",\n    \"invoiceDate\": \"2024-01-15T00:00:00.000Z\",\n    \"description\": \"Test invoice\",\n    \"status\": \"paid\",\n    \"createdAt\": \"2026-01-03T18:58:38.933Z\",\n    \"updatedAt\": \"2026-01-03T19:02:28.381Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update-invoice",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"paid\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tenants/53c19896-4603-4dec-aaee-a270c9129bea/invoices/dce510e7-db9b-4a4e-8567-6fd306a7bbda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"53c19896-4603-4dec-aaee-a270c9129bea",
+								"invoices",
+								"dce510e7-db9b-4a4e-8567-6fd306a7bbda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAYWJjLmNvbSIsInN1YiI6IjNiYWIyYWY0LTRlOWUtNDMxNi1iMWI3LTViNDgxMjg3ODZjNyIsInRlbmFudElkIjoiZWYwM2JjN2UtMjg3NC00OWY5LWJlNWUtYTJjYWQ2MjhkNDFmIiwiaXNTdXBlckFkbWluIjpmYWxzZSwiaWF0IjoxNzY3NDk3NjYyLCJleHAiOjE3Njc1ODQwNjJ9.SeVwveVXwBtn3Sh2bJm6pPnXn1kUKVF9A1tOpEeOzQI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-tenant-id",
+								"value": "1df9d3f5-e21b-4007-95f5-04d930cc5323",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 150,\n    \"currency\": \"USD\",\n    \"invoiceNumber\": \"INV-001\",\n    \"description\": \"Invoice for tenant xyz abc\",\n    \"status\": \"open\",\n    \"invoiceDate\": \"2024-01-15T00:00:00Z\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/invoices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"invoices"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create invoice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-tenant-id",
+										"value": "1df9d3f5-e21b-4007-95f5-04d930cc5323",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": 150,\n    \"currency\": \"USD\",\n    \"invoiceNumber\": \"INV-001\",\n    \"description\": \"Invoice for tenant xyz abc\",\n    \"status\": \"open\",\n    \"invoiceDate\": \"2024-01-15T00:00:00Z\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/invoices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tenants",
+										"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+										"invoices"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "350"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15e-SuQvNzNJReEwUjZQHHHaMdTNZwk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jan 2026 03:35:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"0b7707d2-1f39-48e9-b8af-4dd19e78fa2c\",\n    \"tenantId\": \"ef03bc7e-2874-49f9-be5e-a2cad628d41f\",\n    \"vendorId\": null,\n    \"invoiceNumber\": \"INV-001\",\n    \"amount\": \"150.00\",\n    \"currency\": \"USD\",\n    \"invoiceDate\": \"2024-01-15T00:00:00.000Z\",\n    \"description\": \"Invoice for tenant xyz abc\",\n    \"status\": \"open\",\n    \"createdAt\": \"2026-01-04T03:35:41.100Z\",\n    \"updatedAt\": \"2026-01-04T03:35:41.100Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "import-txn api",
+			"item": [
+				{
+					"name": "import-txn-without-idempotency",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAYWJjLmNvbSIsInN1YiI6IjNiYWIyYWY0LTRlOWUtNDMxNi1iMWI3LTViNDgxMjg3ODZjNyIsInRlbmFudElkIjoiZWYwM2JjN2UtMjg3NC00OWY5LWJlNWUtYTJjYWQ2MjhkNDFmIiwiaXNTdXBlckFkbWluIjpmYWxzZSwiaWF0IjoxNzY3NDk3NjYyLCJleHAiOjE3Njc1ODQwNjJ9.SeVwveVXwBtn3Sh2bJm6pPnXn1kUKVF9A1tOpEeOzQI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactions\": [\n      {\n        \"externalId\": \"TXN-006\",\n        \"postedAt\": \"2024-01-15T10:00:00Z\",\n        \"amount\": 150,\n        \"currency\": \"USD\",\n        \"description\": \"Payment for tenant xyz abc\"\n      },\n      {\n        \"externalId\": \"TXN-007\",\n        \"postedAt\": \"2024-01-16T10:00:00Z\",\n        \"amount\": 2000.00,\n        \"currency\": \"USD\",\n        \"description\": \"Another payment\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/bank-transactions/import",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"bank-transactions",
+								"import"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import-with-idempotency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Idempotency-Key",
+								"value": "my-unique-key-123",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactions\": [\n      {\n        \"externalId\": \"TXN-005\",\n        \"postedAt\": \"2024-01-18T10:00:00Z\",\n        \"amount\": 999.00,\n        \"currency\": \"USD\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tenants/1df9d3f5-e21b-4007-95f5-04d930cc5323/bank-transactions/import",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"1df9d3f5-e21b-4007-95f5-04d930cc5323",
+								"bank-transactions",
+								"import"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reconcile",
+			"item": [
+				{
+					"name": "reconcile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"topN\": 5}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/reconcile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"reconcile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "explain and matches",
+			"item": [
+				{
+					"name": "get-bank-txns",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/bank-transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"bank-transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "explain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/reconcile/explain?invoice_id=0b7707d2-1f39-48e9-b8af-4dd19e78fa2c&transaction_id=7d9b930e-0ee1-40a5-8765-4b2f7ae0f1b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"reconcile",
+								"explain"
+							],
+							"query": [
+								{
+									"key": "invoice_id",
+									"value": "0b7707d2-1f39-48e9-b8af-4dd19e78fa2c"
+								},
+								{
+									"key": "transaction_id",
+									"value": "7d9b930e-0ee1-40a5-8765-4b2f7ae0f1b2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-matches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/matches",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"matches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"confirmedBy\": \"john@example.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/matches/a7965925-10fb-4693-a7b0-0f627bcf095a/confirm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"matches",
+								"a7965925-10fb-4693-a7b0-0f627bcf095a",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoice-status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/invoices/0b7707d2-1f39-48e9-b8af-4dd19e78fa2c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"invoices",
+								"0b7707d2-1f39-48e9-b8af-4dd19e78fa2c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ai-explanation",
+			"item": [
+				{
+					"name": "ai-explanation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tenants/ef03bc7e-2874-49f9-be5e-a2cad628d41f/ai-explanation?invoice_id=0b7707d2-1f39-48e9-b8af-4dd19e78fa2c&transaction_id=7d9b930e-0ee1-40a5-8765-4b2f7ae0f1b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenants",
+								"ef03bc7e-2874-49f9-be5e-a2cad628d41f",
+								"ai-explanation"
+							],
+							"query": [
+								{
+									"key": "invoice_id",
+									"value": "0b7707d2-1f39-48e9-b8af-4dd19e78fa2c"
+								},
+								{
+									"key": "transaction_id",
+									"value": "7d9b930e-0ee1-40a5-8765-4b2f7ae0f1b2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAYWJjLmNvbSIsInN1YiI6IjNiYWIyYWY0LTRlOWUtNDMxNi1iMWI3LTViNDgxMjg3ODZjNyIsInRlbmFudElkIjoiZWYwM2JjN2UtMjg3NC00OWY5LWJlNWUtYTJjYWQ2MjhkNDFmIiwiaXNTdXBlckFkbWluIjpmYWxzZSwiaWF0IjoxNzY3NDk3NjYyLCJleHAiOjE3Njc1ODQwNjJ9.SeVwveVXwBtn3Sh2bJm6pPnXn1kUKVF9A1tOpEeOzQI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
