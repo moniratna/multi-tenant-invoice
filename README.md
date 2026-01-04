@@ -108,7 +108,7 @@ This system provides automated invoice-to-transaction matching with:
 
 ```bash
 git clone <repository-url>
-cd invoice-reconciliation
+cd multi-tenant-invoice
 ```
 
 ### 2. Database Setup
